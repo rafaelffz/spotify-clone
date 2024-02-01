@@ -7,6 +7,7 @@ import ChevronUp from "vue-material-design-icons/ChevronUp.vue"
 import ChevronDown from "vue-material-design-icons/ChevronDown.vue"
 import ChevronRight from "vue-material-design-icons/ChevronRight.vue"
 import ChevronLeft from "vue-material-design-icons/ChevronLeft.vue"
+import Translate from "vue-material-design-icons/Translate.vue"
 
 const openMenu = ref(false)
 </script>
@@ -68,7 +69,7 @@ const openMenu = ref(false)
           </RouterLink>
 
           <div class="py-3.5"></div>
-          
+
           <MenuItem :icon-size="24" name="Create Playlist" icon-string="playlist" page-url="/playlist" />
           <MenuItem class="-ml-[1px]" :icon-size="27" name="Liked Songs" icon-string="liked" page-url="/playlist" />
         </ul>
@@ -82,8 +83,9 @@ const openMenu = ref(false)
       </div>
     </div>
 
-    <div class="fixed right-0 top-0 w-[calc(100%-240px)] overflow-auto h-full bg-gradient-to-b from-[#444444] to-black">
-      
+    <div
+      class="fixed right-0 top-0 w-[calc(100%-240px)] overflow-auto h-full bg-gradient-to-b from-[#222222] to-[#0a0a0a]"
+    >
       <div class="mt-[70px]"></div>
       <RouterView />
       <div class="mb-[100px]"></div>
